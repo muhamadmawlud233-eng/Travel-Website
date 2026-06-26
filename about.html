@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about Kurdistan Region - its geography, culture, history, and what makes it a unique travel destination.">
+    <meta name="keywords" content="Kurdistan, culture, history, geography, Middle East, tourism">
+    <title>About Kurdistan - Culture, History & Geography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <span>Visit</span> <span>Kurdistan</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                <li><a href="destinations.html" class="nav-link" data-translate="nav-destinations">Destinations</a></li>
+                <li><a href="hotels.html" class="nav-link" data-translate="nav-hotels">Hotels</a></li>
+                <li><a href="about.html" class="nav-link active" data-translate="nav-about">About</a></li>
+                <li><a href="gallery.html" class="nav-link" data-translate="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="toggleLangDropdown()">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <button class="lang-option" onclick="setLanguage('en')"> English</button>
+                    <button class="lang-option" onclick="setLanguage('ku')"> کوردی</button>
+                    <button class="lang-option" onclick="setLanguage('ar')"> العربية</button>
+                </div>
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="height: 50vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="about-hero-title">About Kurdistan</h1>
+            <p class="hero-subtitle" data-translate="about-hero-sub">Discover the land, people, and culture of this
+                beautiful region</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-translate="about-welcome">Welcome to Kurdistan Region</h2>
+                    <h3 data-translate="about-hidden-gem">The Hidden Gem of the Middle East</h3>
+                    <p data-translate="about-intro-p1">
+                        The Kurdistan Region is an autonomous region in northern Iraq, known for its stunning natural
+                        landscapes, rich cultural heritage, and warm hospitality. Nestled between majestic mountain
+                        ranges, this region offers a unique blend of ancient traditions and modern development.
+                    </p>
+                    <p data-translate="about-intro-p2">
+                        From the snow-capped peaks of the Zagros Mountains to lush green valleys, cascading waterfalls,
+                        and pristine lakes, Kurdistan is a paradise for nature lovers and adventure seekers. The region
+                        boasts some of the most spectacular scenery in the Middle East, with diverse ecosystems and
+                        breathtaking vistas at every turn.
+                    </p>
+                    <p data-translate="about-intro-p3">
+                        Kurdistan's strategic location has made it a crossroads of civilizations throughout history,
+                        resulting in a fascinating cultural tapestry that combines ancient traditions with contemporary
+                        influences. Today, it stands as a safe, welcoming destination for travelers seeking authentic
+                        experiences and natural beauty.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/Kurdistan.png" alt="Kurdistan Landscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geography -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-geography">Geography & Climate</h2>
+            <p class="section-subtitle" data-translate="about-geography-sub">A land of diverse landscapes and four
+                distinct seasons</p>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/Geography & Climate Kurdistan.webp" alt="Kurdistan Geography">
+                </div>
+                <div class="about-text">
+                    <h3 data-translate="geo-diverse">Diverse Landscapes</h3>
+                    <p data-translate="geo-p1">
+                        The Kurdistan Region covers approximately 40,000 square kilometers of predominantly mountainous
+                        terrain. The Zagros Mountain range dominates the landscape, with peaks reaching over 3,600
+                        meters at Halgurd Mountain, the highest point in Iraq.
+                    </p>
+                    <p data-translate="geo-features">
+                        <strong>Key Geographic Features:</strong>
+                    </p>
+                    <p data-translate="geo-mountains">
+                        🏔️ <strong>Mountains:</strong> The Zagros range creates a dramatic backdrop with snow-capped
+                        peaks, deep valleys, and stunning alpine scenery.
+                    </p>
+                    <p data-translate="geo-water">
+                        💧 <strong>Water Sources:</strong> Fed by numerous rivers including the Great Zab and Little
+                        Zab, the region features spectacular waterfalls, natural springs, and large reservoirs like
+                        Dukan Lake.
+                    </p>
+                    <p data-translate="geo-vegetation">
+                        🌳 <strong>Vegetation:</strong> From oak forests in the foothills to alpine meadows at higher
+                        elevations, the region supports diverse flora and fauna.
+                    </p>
+                    <p data-translate="geo-climate">
+                        ☀️ <strong>Climate:</strong> The region enjoys a Mediterranean climate with hot, dry summers and
+                        cold, wet winters. Mountain areas receive significant snowfall, while valleys experience milder
+                        conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Heritage -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-culture">Culture & Heritage</h2>
+            <p class="section-subtitle" data-translate="about-culture-sub">A rich tapestry of traditions, language, and
+                customs</p>
+
+            <div class="features">
+                <div class="feature-box">
+                    <div class="feature-icon">🗣️</div>
+                    <h3 class="feature-title" data-translate="culture-language">Language</h3>
+                    <p class="feature-description" data-translate="culture-language-desc">
+                        Kurdish is the primary language, with two main dialects: Sorani and Kurmanji. Arabic and English
+                        are also widely spoken in urban areas.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🎵</div>
+                    <h3 class="feature-title" data-translate="culture-music">Music & Dance</h3>
+                    <p class="feature-description" data-translate="culture-music-desc">
+                        Traditional Kurdish music features the daf drum and tembûr. The Halparke (circular dance) is
+                        performed at celebrations and gatherings.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title" data-translate="culture-arts">Arts & Crafts</h3>
+                    <p class="feature-description" data-translate="culture-arts-desc">
+                        Famous for intricate carpets, traditional clothing, jewelry, and handicrafts that reflect
+                        centuries of artistic tradition.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🍽️</div>
+                    <h3 class="feature-title" data-translate="culture-cuisine">Cuisine</h3>
+                    <p class="feature-description" data-translate="culture-cuisine-desc">
+                        Rich culinary heritage featuring dishes like dolma, kebabs, biryani, and the famous Kurdish
+                        breakfast spread with fresh bread.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🏛️</div>
+                    <h3 class="feature-title" data-translate="culture-architecture">Architecture</h3>
+                    <p class="feature-description" data-translate="culture-architecture-desc">
+                        From ancient citadels to traditional stone houses and modern developments, architecture reflects
+                        the region's evolving identity.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🎉</div>
+                    <h3 class="feature-title" data-translate="culture-festivals">Festivals</h3>
+                    <p class="feature-description" data-translate="culture-festivals-desc">
+                        Newroz (March 21) marks the Kurdish New Year with celebrations, bonfires, and traditional
+                        festivities throughout the region.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-history">Historical Timeline</h2>
+            <p class="section-subtitle" data-translate="about-history-sub">A journey through thousands of years of
+                history</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-translate="history-title">Ancient to Modern Times</h3>
+                    <p data-translate="history-ancient">
+                        <strong>Ancient Period (60,000 BCE - 550 BCE):</strong><br>
+                        Archaeological discoveries at Shanidar Cave reveal Neanderthal habitation dating back 60,000
+                        years. The region was home to ancient civilizations including the Hurrians and Medes.
+                    </p>
+                    <p data-translate="history-classical">
+                        <strong>Classical Period (550 BCE - 637 CE):</strong><br>
+                        The region came under the influence of the Persian Empire, followed by Alexander the Great's
+                        conquests, and later the Roman and Byzantine empires.
+                    </p>
+                    <p data-translate="history-islamic">
+                        <strong>Islamic Era (637 CE - 1918):</strong><br>
+                        Following Islamic conquests, the region saw the rise of Kurdish principalities and emirates.
+                        Cities like Erbil maintained their importance as trade and cultural centers.
+                    </p>
+                    <p data-translate="history-modern">
+                        <strong>Modern Era (1918 - Present):</strong><br>
+                        After World War I, Kurdistan became part of modern Iraq. The Kurdistan Region gained autonomy in
+                        1991 and has since developed into a stable, semi-autonomous region with its own government and
+                        flourishing tourism sector.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/Historical .PNG" alt="Kurdish History">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="stats-title">Kurdistan in Numbers</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="stat-number">~6M</span>
+                    <span class="stat-label" data-translate="stats-population">Population</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">40,000</span>
+                    <span class="stat-label" data-translate="stats-area">Square Kilometers</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">3,607m</span>
+                    <span class="stat-label" data-translate="stats-highest">Highest Peak</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label" data-translate="stats-governorates">Main Governorates</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">8,000+</span>
+                    <span class="stat-label" data-translate="stats-history-erbil">Years of History (Erbil)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label" data-translate="stats-seasons">Distinct Seasons</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Major Cities -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-cities">Major Cities</h2>
+            <p class="section-subtitle" data-translate="about-cities-sub">Urban centers of culture, commerce, and
+                hospitality</p>
+
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="images/Erbil .jpg" alt="Erbil City" loading="lazy">
+                        <span class="card-badge">Capital</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Erbil (Hewlêr)</h3>
+                        <p class="card-location">Kurdistan Region Capital</p>
+                        <p class="card-description">
+                            The capital and largest city, home to the ancient Citadel, one of the oldest continuously
+                            inhabited settlements in the world. Modern Erbil blends ancient history with contemporary
+                            development, featuring international hotels, shopping centers, and a vibrant cultural scene.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag">Ancient Citadel</span>
+                            <span class="feature-tag">Modern City</span>
+                            <span class="feature-tag">Business Hub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="images/Sulaymaniyah .jpg  " alt="Sulaymaniyah City" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sulaymaniyah (Silêmanî)</h3>
+                        <p class="card-location">Cultural Capital</p>
+                        <p class="card-description">
+                            Known as the cultural capital of Kurdistan, Sulaymaniyah is famous for its vibrant arts
+                            scene, museums, parks, and progressive atmosphere. The city is surrounded by beautiful
+                            mountains and serves as a gateway to natural attractions like Dukan Lake.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag">Arts & Culture</span>
+                            <span class="feature-tag">Museums</span>
+                            <span class="feature-tag">Parks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="images/dohuk.jpg" alt="Dohuk City" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dohuk (Duhok)</h3>
+                        <p class="card-location">Gateway to Natural Wonders</p>
+                        <p class="card-description">
+                            Nestled in a valley surrounded by mountains, Dohuk serves as a gateway to stunning natural
+                            attractions and ancient sites. The city offers a peaceful atmosphere and access to some of
+                            Kurdistan's most spectacular landscapes and historical locations.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag">Mountain City</span>
+                            <span class="feature-tag">Gateway</span>
+                            <span class="feature-tag">Natural Beauty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Visit -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Visit Kurdistan?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>An Unforgettable Experience Awaits</h3>
+                    <p>
+                        <strong>Safety & Stability:</strong> Kurdistan Region is known for its security and stability,
+                        offering a safe environment for travelers from around the world.
+                    </p>
+                    <p>
+                        <strong>Warm Hospitality:</strong> Kurdish people are renowned for their friendliness and
+                        welcoming nature. Visitors often speak of the genuine warmth and generosity they experience.
+                    </p>
+                    <p>
+                        <strong>Natural Beauty:</strong> From snow-capped mountains to lush valleys, stunning waterfalls
+                        to serene lakes, the region offers unparalleled natural diversity.
+                    </p>
+                    <p>
+                        <strong>Cultural Richness:</strong> Experience authentic Kurdish culture, traditional music and
+                        dance, delicious cuisine, and centuries-old customs.
+                    </p>
+                    <p>
+                        <strong>Adventure Opportunities:</strong> Whether you're into hiking, mountain climbing,
+                        paragliding, or simply exploring nature, Kurdistan offers endless possibilities.
+                    </p>
+                    <p>
+                        <strong>Historical Significance:</strong> Discover ancient sites, archaeological treasures, and
+                        historical monuments that tell the story of human civilization.
+                    </p>
+                    <p>
+                        <strong>Developing Infrastructure:</strong> Modern hotels, resorts, restaurants, and
+                        transportation make traveling in Kurdistan comfortable and convenient.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/Why Visit Kurdistan.jpg" alt="Kurdish Culture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section section-light">
+        <div class="container text-center">
+            <h2 class="section-title" data-translate="about-start-adventure">Start Your Kurdistan Adventure</h2>
+            <p class="section-subtitle">Explore breathtaking destinations and create unforgettable memories</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer-title">Kurdistan Travel</h3>
+                    <p data-translate="footer-desc">
+                        Discover the hidden gem of the Middle East. Experience breathtaking natural beauty, rich
+                        culture, and warm hospitality in Kurdistan.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-facebook" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-instagram" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link social-x"
+                            aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick">Quick Links</h3>
+                    <a href="index.html" data-translate="footer-home">Home</a>
+                    <a href="destinations.html" data-translate="footer-destinations">Destinations</a>
+                    <a href="about.html" data-translate="footer-about">About Kurdistan</a>
+                    <a href="gallery.html" data-translate="footer-gallery">Photo Gallery</a>
+                    <a href="contact.html" data-translate="footer-contact">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-top">Top Destinations</h3>
+                    <a href="destinations.html#gali-ali-beg" data-translate="card-gali-title">Gali Ali Beg</a>
+                    <a href="destinations.html#korek" data-translate="card-korek-title">Korek Mountain</a>
+                    <a href="destinations.html#rawanduz" data-translate="card-rawanduz-title">Rawanduz Canyon</a>
+                    <a href="destinations.html#dukan" data-translate="card-dukan-title">Dukan Lake</a>
+                    <a href="destinations.html#halgurd" data-translate="card-halgurd-title">Halgurd Mountain</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-info">Contact Info</h3>
+                    <p>📍 <span data-translate="footer-erbil">Erbil, Kurdistan Region</span></p>
+                    <p>📧 info@kurdistantravel.com</p>
+                    <p>📞 +964 750 123 4567</p>
+                    <p>🕒 <span data-translate="footer-hours">Mon - Fri: 9:00 AM - 6:00 PM</span></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/language.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore all tourist destinations in Kurdistan - waterfalls, mountains, lakes, and natural wonders.">
+    <meta name="keywords"
+        content="Kurdistan destinations, tourist sites, Gali Ali Beg, Korek, Dukan Lake, Halgurd, Rawanduz">
+    <title>Destinations - Explore Kurdistan's Natural Wonders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <span>Visit</span> <span>Kurdistan</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                <li><a href="destinations.html" class="nav-link active"
+                        data-translate="nav-destinations">Destinations</a></li>
+                <li><a href="hotels.html" class="nav-link" data-translate="nav-hotels">Hotels</a></li>
+                <li><a href="about.html" class="nav-link" data-translate="nav-about">About</a></li>
+                <li><a href="gallery.html" class="nav-link" data-translate="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="toggleLangDropdown()">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <button class="lang-option" onclick="setLanguage('en')"> English</button>
+                    <button class="lang-option" onclick="setLanguage('ku')"> کوردی</button>
+                    <button class="lang-option" onclick="setLanguage('ar')"> العربية</button>
+                </div>
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="height: 50vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="dest-hero-title">Explore Our Destinations</h1>
+            <p class="hero-subtitle" data-translate="dest-hero-sub">Discover the most beautiful natural wonders and
+                tourist attractions in Kurdistan
+            </p>
+        </div>
+    </section>
+
+    <!-- All Destinations -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="dest-all">All Destinations</h2>
+            <p class="section-subtitle" data-translate="dest-all-sub">From towering mountains to cascading waterfalls,
+                explore the diverse beauty of
+                Kurdistan</p>
+
+            <div class="destination-grid">
+                <!-- Gali Ali Beg -->
+                <div class="destination-card" id="gali-ali-beg">
+                    <div class="card-image">
+                        <img src="images/Gali Ali Beg Waterfall.jpg" alt="Gali Ali Beg Waterfall" loading="lazy">
+                        <span class="card-badge" data-translate="badge-popular">Popular</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-gali-title">Gali Ali Beg Waterfall</h3>
+                        <a href="https://maps.google.com/?q=36.631529, 44.446630" target="_blank" class="card-location"
+                            data-translate="card-gali-location">📍Khalifan</a>
+                        <p class="card-description" data-translate="card-gali-desc">
+                            One of Kurdistan's most spectacular natural wonders, Gali Ali Beg features a magnificent
+                            waterfall cascading through a narrow gorge surrounded by towering limestone mountains. The
+                            site offers breathtaking views, hiking opportunities, and a refreshing escape into nature.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-waterfall">Waterfall</span>
+                            <span class="feature-tag" data-translate="tag-canyon">Canyon</span>
+                            <span class="feature-tag" data-translate="tag-hiking">Hiking</span>
+                            <span class="feature-tag" data-translate="tag-photography">Photography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bekhal Waterfall -->
+                <div class="destination-card" id="bekhal">
+                    <div class="card-image">
+                        <img src="images/Bekhal Waterfall.jpg" alt="Bekhal Waterfall" loading="lazy">
+                        <span class="card-badge" data-translate="badge-must-visit">Must Visit</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-bekhal-title">Bekhal Waterfall</h3>
+                        <a href="https://maps.google.com/?q=36.617725, 44.498289" target="_blank" class="card-location"
+                            data-translate="card-bekhal-location">📍 Rawanduz</a>
+                        <p class="card-description" data-translate="card-bekhal-desc">
+                            A stunning waterfall surrounded by lush greenery and mountains. The crystal-clear water
+                            falls from significant heights into natural pools below. Popular for picnics, swimming, and
+                            enjoying the serene natural environment. Best visited in spring and early summer.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-waterfall">Waterfall</span>
+                            <span class="feature-tag" data-translate="tag-swimming">Swimming</span>
+                            <span class="feature-tag" data-translate="tag-picnic">Picnic</span>
+                            <span class="feature-tag" data-translate="tag-nature">Nature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rawanduz Canyon -->
+                <div class="destination-card" id="rawanduz">
+                    <div class="card-image">
+                        <img src="images/Rawanduz Canyon.jpeg" alt="Rawanduz Canyon" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-rawanduz-title">Rawanduz Canyon</h3>
+                        <a href="https://maps.google.com/?q=36.622005, 44.532800" target="_blank" class="card-location"
+                            data-translate="card-rawanduz-location">📍 Rawanduz</a>
+                        <p class="card-description" data-translate="card-rawanduz-desc">
+                            A dramatic deep gorge with steep rocky walls carved by the Great Zab river. The canyon
+                            offers spectacular panoramic views and serves as a gateway to many natural attractions. The
+                            historic town of Rawanduz perches dramatically on the canyon's edge.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-canyon">Canyon</span>
+                            <span class="feature-tag" data-translate="tag-photography">Photography</span>
+                            <span class="feature-tag" data-translate="tag-scenic-views">Scenic Views</span>
+                            <span class="feature-tag" data-translate="tag-historic-town">Historic Town</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shanidar Cave -->
+                <div class="destination-card" id="shanidar">
+                    <div class="card-image">
+                        <img src="images/Shanidar Cave.jpeg" alt="Shanidar Cave" loading="lazy">
+                        <span class="card-badge" data-translate="badge-historic">Historic</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-shanidar-title">Shanidar Cave</h3>
+                        <a href="https://maps.google.com/?q=36.834726, 44.219103" target="_blank" class="card-location"
+                            data-translate="card-shanidar-location">📍 Bradost Mountain, Barzan</a>
+                        <p class="card-description" data-translate="card-shanidar-desc">
+                            An archaeological treasure where Neanderthal remains dating back 60,000 years were
+                            discovered. This historic cave offers insights into ancient human civilization and features
+                            stunning mountain views. A must-visit for history and archaeology enthusiasts.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-cave">Cave</span>
+                            <span class="feature-tag" data-translate="tag-archaeology">Archaeology</span>
+                            <span class="feature-tag" data-translate="tag-history">History</span>
+                            <span class="feature-tag" data-translate="tag-mountain-views">Mountain Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Halgurd Mountain -->
+                <div class="destination-card" id="halgurd">
+                    <div class="card-image">
+                        <img src="images/Hallgurd.jpeg" alt="Halgurd Mountain" loading="lazy">
+                        <span class="card-badge" data-translate="badge-highest-peak">Highest Peak</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-halgurd-title">Halgurd Mountain</h3>
+                        <a href="https://maps.google.com/?q=36.733467, 44.858453" target="_blank" class="card-location"
+                            data-translate="card-halgurd-location">📍 Choman </a>
+                        <p class="card-description" data-translate="card-halgurd-desc">
+                            Standing at 3,607 meters, Halgurd is the highest peak in Iraq and offers challenging
+                            trekking opportunities. Snow-capped for much of the year, it provides spectacular alpine
+                            scenery and panoramic views. Perfect for experienced hikers and mountaineers.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-mountain">Mountain</span>
+                            <span class="feature-tag" data-translate="tag-trekking">Trekking</span>
+                            <span class="feature-tag" data-translate="tag-snow-sports">Snow Sports</span>
+                            <span class="feature-tag" data-translate="tag-alpine">Alpine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choman Region -->
+                <div class="destination-card" id="choman">
+                    <div class="card-image">
+                        <img src="images/choman.jpg" alt="Choman Region" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-choman-title">Choman </h3>
+                        <a href="https://maps.google.com/?q=36.6333,44.8833" target="_blank" class="card-location"
+                            data-translate="card-choman-location">📍 Choman, Erbil Governorate</a>
+                        <p class="card-description" data-translate="card-choman-desc">
+                            A pristine mountainous region known for its natural beauty, traditional villages, and
+                            outdoor activities. Features stunning valleys, rivers, and forests. Popular for camping,
+                            hiking, and experiencing authentic Kurdish mountain culture.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-mountain">Mountains</span>
+                            <span class="feature-tag" data-translate="tag-camping">Camping</span>
+                            <span class="feature-tag" data-translate="tag-villages">Villages</span>
+                            <span class="feature-tag" data-translate="tag-nature">Nature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pank Resort -->
+                <div class="destination-card" id="pank">
+                    <div class="card-image">
+                        <img src="images/Shnglbana.jpeg" alt="Pank Resort" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-shinglbana-title">Shinglbana</h3>
+                        <a href="https://maps.google.com/?q=36.611902, 44.510314
+
+" target="_blank" class="card-location" data-translate="card-shinglbana-location">📍 Rawanduz, </a>
+                        <p class="card-description" data-translate="card-shinglbana-desc">
+                            A beautiful mountain resort offering modern amenities amid natural splendor. Features
+                            restaurants, chalets, and recreational facilities. Surrounded by forests and mountains, it's
+                            perfect for family vacations and weekend getaways.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-resort">Resort</span>
+                            <span class="feature-tag" data-translate="tag-accommodation">Accommodation</span>
+                            <span class="feature-tag" data-translate="tag-family-friendly">Family-Friendly</span>
+                            <span class="feature-tag" data-translate="tag-recreation">Recreation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dukan Lake -->
+                <div class="destination-card" id="dukan">
+                    <div class="card-image">
+                        <img src="images/Dukan Lake.jpeg" alt="Dukan Lake" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-dukan-title">Dukan Lake</h3>
+                        <a href="https://maps.google.com/?q=35.9547,44.9583 " target="_blank" class="card-location"
+                            data-translate="card-dukan-location">📍 Sulaymaniyah Governorate</a>
+                        <p class="card-description" data-translate="card-dukan-desc">
+                            Kurdistan's largest lake, created by the Dukan Dam on the Little Zab river. Surrounded by
+                            mountains, it offers boat tours, fishing, water sports, and stunning sunset views. The
+                            lakeside town provides accommodations and restaurants.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-lake">Lake</span>
+                            <span class="feature-tag" data-translate="tag-boating">Boating</span>
+                            <span class="feature-tag" data-translate="tag-fishing">Fishing</span>
+                            <span class="feature-tag" data-translate="tag-water-sports">Water Sports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ahmed Awa Waterfall -->
+                <div class="destination-card" id="ahmed-awa">
+                    <div class="card-image">
+                        <img src="images/Ahmed Awa Waterfall.jpg" alt="Ahmed Awa Waterfall" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-ahmed-awa-title">Ahmed Awa Waterfall</h3>
+                        <a href="https://maps.google.com/?q=35.306718, 46.063155" target="_blank" class="card-location"
+                            data-translate="card-ahmed-awa-location">📍 Halabja, Sulaymaniyah</a>
+                        <p class="card-description" data-translate="card-ahmed-awa-desc">
+                            A picturesque waterfall flowing year-round through a beautiful valley. The area features
+                            restaurants, parks, and walking paths. Known for its refreshing atmosphere and scenic
+                            beauty, making it a popular destination for families and nature lovers.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-waterfall">Waterfall</span>
+                            <span class="feature-tag" data-translate="tag-parks">Parks</span>
+                            <span class="feature-tag" data-translate="tag-dining">Dining</span>
+                            <span class="feature-tag" data-translate="tag-family-friendly">Family-Friendly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Korek Mountain -->
+                <div class="destination-card" id="korek">
+                    <div class="card-image">
+                        <img src="images/Korek Mountain.jpeg" alt="Korek Mountain Resort" loading="lazy">
+                        <span class="card-badge" data-translate="badge-adventure">Adventure</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-korek-full-title">Korek Mountain Resort</h3>
+                        <a href="https://maps.google.com/?q=36.607992, 44.493353
+
+" target="_blank" class="card-location" data-translate="card-korek-full-location">📍 Rawanduz, Talafric </a>
+                        <p class="card-description" data-translate="card-korek-full-desc">
+                            Home to the Middle East's longest zipline and cable car system. This premier mountain resort
+                            offers breathtaking views, adventure activities, restaurants, and hotels. Features
+                            paragliding, skiing in winter, and year-round entertainment.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-cable-car">Cable Car</span>
+                            <span class="feature-tag" data-translate="tag-zipline">Zipline</span>
+                            <span class="feature-tag" data-translate="tag-resort">Resort</span>
+                            <span class="feature-tag" data-translate="badge-adventure">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shaqlawa -->
+                <div class="destination-card" id="shaqlawa">
+                    <div class="card-image">
+                        <img src="images/Shaqlawa.jpeg" alt="Shaqlawa Town" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-shaqlawa-title">Shaqlawa</h3>
+                        <a href="https://maps.google.com/?q=36.4083,44.3183" target="_blank" class="card-location"
+                            data-translate="card-shaqlawa-location">📍 Erbil Governorate</a>
+                        <p class="card-description" data-translate="card-shaqlawa-desc">
+                            A charming mountain town known for its pleasant climate, vineyards, and fruit orchards.
+                            Famous for its traditional bazaar, fresh produce, and cool summer weather. Popular weekend
+                            destination with numerous parks and restaurants.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-town">Town</span>
+                            <span class="feature-tag" data-translate="tag-bazaar">Bazaar</span>
+                            <span class="feature-tag" data-translate="tag-culture">Culture</span>
+                            <span class="feature-tag" data-translate="tag-food">Food</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soran -->
+                <div class="destination-card" id="soran">
+                    <div class="card-image">
+                        <img src="images/Soran.jpeg" alt="Soran" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-soran-title">Soran</h3>
+                        <a href="https://maps.google.com/?q=36.6539,44.5422" target="_blank" class="card-location"
+                            data-translate="card-soran-location">📍 Erbil Governorate</a>
+                        <p class="card-description" data-translate="card-soran-desc">
+                            A historic town surrounded by beautiful mountains and valleys. Gateway to numerous natural
+                            attractions including waterfalls and hiking trails. Known for its pleasant climate and
+                            traditional Kurdish atmosphere.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-town">Town</span>
+                            <span class="feature-tag" data-translate="tag-gateway">Gateway</span>
+                            <span class="feature-tag" data-translate="tag-hiking">Hiking</span>
+                            <span class="feature-tag" data-translate="tag-culture">Culture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amedi -->
+                <div class="destination-card" id="amedi">
+                    <div class="card-image">
+                        <img src="images/Amedi .jpeg" alt="Amedi Ancient City" loading="lazy">
+                        <span class="card-badge" data-translate="badge-ancient">Ancient</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-amedi-title">Amedi </h3>
+                        <a href="https://maps.google.com/?q=37.0936,43.4867" target="_blank" class="card-location"
+                            data-translate="card-amedi-location">📍 Dohuk Governorate</a>
+                        <p class="card-description" data-translate="card-amedi-desc">
+                            An ancient hilltop city with over 5,000 years of history, perched dramatically on a
+                            flat-topped mountain. Features ancient gates, historic buildings, and stunning panoramic
+                            views. A unique blend of history and natural beauty.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-ancient-city">Ancient City</span>
+                            <span class="feature-tag" data-translate="tag-history">History</span>
+                            <span class="feature-tag" data-translate="tag-architecture">Architecture</span>
+                            <span class="feature-tag" data-translate="tag-views">Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lalish -->
+                <div class="destination-card" id="lalish">
+                    <div class="card-image">
+                        <img src="images/Lalish.jpeg" alt="Lalish Temple" loading="lazy">
+                        <span class="card-badge" data-translate="badge-sacred">Sacred</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-lalish-title">Lalish</h3>
+                        <a href="https://maps.google.com/?q=36.771549, 43.303768
+
+" target="_blank" class="card-location" data-translate="card-lalish-location">📍 Shekhan, Dohuk Governorate</a>
+                        <p class="card-description" data-translate="card-lalish-desc">
+                            The holiest temple of the Yazidi faith, nestled in a peaceful valley. Features unique
+                            conical spires, sacred springs, and beautiful architecture. A place of great spiritual and
+                            cultural significance with serene natural surroundings.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-temple">Temple</span>
+                            <span class="feature-tag" data-translate="tag-sacred-site">Sacred Site</span>
+                            <span class="feature-tag" data-translate="tag-culture">Culture</span>
+                            <span class="feature-tag" data-translate="tag-architecture">Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akre -->
+                <div class="destination-card" id="akre">
+                    <div class="card-image">
+                        <img src="images/Akre.jpeg" alt="Akre Town" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-akre-title">Akre</h3>
+                        <a href="https://maps.google.com/?q=36.7417,43.8736" target="_blank" class="card-location"
+                            data-translate="card-akre-location">📍 Dohuk Governorate</a>
+                        <p class="card-description" data-translate="card-akre-desc">
+                            A picturesque mountain town built on steep slopes, known for its traditional architecture
+                            and winding streets. Offers stunning views of surrounding valleys and mountains. Famous for
+                            its cool climate and welcoming atmosphere.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature-tag" data-translate="tag-mountain-town">Mountain Town</span>
+                            <span class="feature-tag" data-translate="tag-traditional">Traditional</span>
+                            <span class="feature-tag" data-translate="tag-scenic">Scenic</span>
+                            <span class="feature-tag" data-translate="tag-culture">Culture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- zaxo -->
+
+                <div class="destination-card" id="shanidar">
+                    <div class="card-image">
+                        <img src="images/Zaxo.jpg" alt="Shanidar Cave" loading="lazy">
+                        <span class="card-badge" data-translate="card-zaxo-title">Zaxo</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-translate="card-zaxo-title">Zaxo</h3>
+                        <a href="https://maps.google.com/?q=37.137020, 42.689991
+
+" target="_blank" class="card-location" data-translate="card-zaxo-location">📍 Zaxo, Duhok</a>
+                        <p class="card-description" data-translate="card-zaxo-desc">
+                            The population of the town rose from about 30,000 in 1950 to 350,000 in 1992 due to Kurds
+                            fleeing from other areas of the country </p>
+                        <div class="card-features">
+                            <span class="feature-tag">Archaeology</span>
+                            <span class="feature-tag">History</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="travel-tips">Travel Tips</h2>
+            <div class="features">
+                <div class="feature-box">
+                    <div class="feature-icon">🗓️</div>
+                    <h3 class="feature-title" data-translate="best-time">Best Time to Visit</h3>
+                    <p class="feature-description">
+                        Spring (March-May) and Fall (September-November) offer the best weather. Summer is hot in
+                        valleys but pleasant in mountains.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🚗</div>
+                    <h3 class="feature-title" data-translate="getting-around">Getting Around</h3>
+                    <p class="feature-description">
+                        Car rental is recommended for flexibility. Many destinations are accessible by organized tours
+                        or private drivers.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">👕</div>
+                    <h3 class="feature-title" data-translate="what-to-pack">What to Pack</h3>
+                    <p class="feature-description">
+                        Comfortable hiking shoes, layers for varying temperatures, sun protection, and a camera to
+                        capture the stunning scenery.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="feature-title" data-translate="local-advice">Local Advice</h3>
+                    <p class="feature-description">
+                        Respect local customs, try traditional Kurdish cuisine, and don't hesitate to interact with
+                        friendly locals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer-title">Kurdistan Travel</h3>
+                    <p data-translate="footer-desc">
+                        Discover the hidden gem of the Middle East. Experience breathtaking natural beauty, rich
+                        culture, and warm hospitality in Kurdistan.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-facebook" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-instagram" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link social-x"
+                            aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick">Quick Links</h3>
+                    <a href="index.html" data-translate="footer-home">Home</a>
+                    <a href="destinations.html" data-translate="footer-destinations">Destinations</a>
+                    <a href="about.html" data-translate="footer-about">About Kurdistan</a>
+                    <a href="gallery.html" data-translate="footer-gallery">Photo Gallery</a>
+                    <a href="contact.html" data-translate="footer-contact">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-top">Top Destinations</h3>
+                    <a href="#gali-ali-beg" data-translate="card-gali-title">Gali Ali Beg</a>
+                    <a href="#korek" data-translate="card-korek-title">Korek Mountain</a>
+                    <a href="#rawanduz" data-translate="card-rawanduz-title">Rawanduz Canyon</a>
+                    <a href="#dukan" data-translate="card-dukan-title">Dukan Lake</a>
+                    <a href="#halgurd" data-translate="card-halgurd-title">Halgurd Mountain</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-info">Contact Info</h3>
+                    <p>📍 <span data-translate="footer-erbil">Erbil, Kurdistan Region</span></p>
+                    <p>📧 ISE@kurdistantravel.com</p>
+                    <p>📞 +964 750 123 4567</p>
+                    <p>🕒 <span data-translate="footer-hours">Mon - Fri: 9:00 AM - 6:00 PM</span></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/language.js"></script>
+</body>
+
+</html>

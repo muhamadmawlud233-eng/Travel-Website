@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best hotels in Kurdistan - from luxury resorts to budget-friendly accommodations in Erbil, Sulaymaniyah, Duhok, and more.">
+    <title>Hotels in Kurdistan - Visit Kurdistan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <span>Visit</span> <span>Kurdistan</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-translate="nav-about">About</a></li>
+                <li><a href="destinations.html" class="nav-link" data-translate="nav-destinations">Destinations</a></li>
+                <li><a href="hotels.html" class="nav-link active" data-translate="nav-hotels">Hotels</a></li>
+                <li><a href="gallery.html" class="nav-link" data-translate="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="toggleLangDropdown()">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <button onclick="setLanguage('en')">English</button>
+                    <button onclick="setLanguage('ku')">کوردی</button>
+                    <button onclick="setLanguage('ar')">العربية</button>
+                </div>
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero hotels-hero">
+        <div class="page-hero-content">
+            <h1 data-translate="hotels-title">Hotels in Kurdistan</h1>
+            <p data-translate="hotels-subtitle">Find your perfect stay from luxury resorts to cozy retreats</p>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="section hotels-section">
+        <div class="container">
+            <!-- Province Filter -->
+            <div class="province-filter">
+                <button class="filter-btn active" data-province="all" data-translate="filter-all">All Provinces</button>
+                <button class="filter-btn" data-province="erbil" data-translate="filter-erbil">Erbil</button>
+                <button class="filter-btn" data-province="sulaymaniyah"
+                    data-translate="filter-sulaymaniyah">Sulaymaniyah</button>
+                <button class="filter-btn" data-province="duhok" data-translate="filter-duhok">Duhok</button>
+                <button class="filter-btn" data-province="halabja" data-translate="filter-halabja">Halabja</button>
+            </div>
+
+            <!-- Hotels Grid -->
+            <div class="hotels-grid" id="hotelsGrid">
+                <!-- Erbil Hotels -->
+                <div class="hotel-card" data-province="erbil" data-hotel="rotana-erbil">
+                    <div class="hotel-image">
+                        <img src="images/rotana.jpg"
+                            alt="Rotana Erbil Hotel">
+                        <span class="hotel-rating">5<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Erbil</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Rotana Erbil Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Erbil, Erbil</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$150</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('rotana-erbil')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="erbil" data-hotel="divan-erbil">
+                    <div class="hotel-image">
+                        <img src="images/Divan Erbil Hotel.jpg"
+                            alt="Divan Erbil Hotel">
+                        <span class="hotel-rating">5<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Erbil</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Divan Erbil Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Erbil, Erbil</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$180</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('divan-erbil')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="erbil" data-hotel="shaqlawa-resort">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop"
+                            alt="Shaqlawa Resort Hotel">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Erbil</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Shaqlawa Resort Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Shaqlawa, Erbil</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$95</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('shaqlawa-resort')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="erbil" data-hotel="soran-palace">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop"
+                            alt="Soran Palace Hotel">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Erbil</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Soran Palace Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Soran, Erbil</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$85</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('soran-palace')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="erbil" data-hotel="tangram-erbil">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop"
+                            alt="Tangram Hotel Erbil">
+                        <span class="hotel-rating">5<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Erbil</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Tangram Hotel Erbil</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Erbil, Erbil</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$160</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('tangram-erbil')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="erbil" data-hotel="classy-hotel">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop"
+                            alt="Classy Hotel Erbil">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Erbil</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Classy Hotel Erbil</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Erbil, Erbil</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$75</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('classy-hotel')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sulaymaniyah Hotels -->
+                <div class="hotel-card" data-province="sulaymaniyah" data-hotel="grand-millennium">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=600&fit=crop"
+                            alt="Grand Millennium Sulaymaniyah">
+                        <span class="hotel-rating">5<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Sulaymaniyah</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Grand Millennium Sulaymaniyah</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Sulaymaniyah, Sulaymaniyah</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$140</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('grand-millennium')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="sulaymaniyah" data-hotel="titanic-sulaymaniyah">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop"
+                            alt="Titanic Hotel Sulaymaniyah">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Sulaymaniyah</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Titanic Hotel Sulaymaniyah</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Sulaymaniyah, Sulaymaniyah</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$100</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('titanic-sulaymaniyah')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="sulaymaniyah" data-hotel="copthorne-sulaymaniyah">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&h=600&fit=crop"
+                            alt="Copthorne Hotel Sulaymaniyah">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Sulaymaniyah</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Copthorne Hotel Sulaymaniyah</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Sulaymaniyah, Sulaymaniyah</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$110</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('copthorne-sulaymaniyah')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="sulaymaniyah" data-hotel="ramada-sulaymaniyah">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?w=800&h=600&fit=crop"
+                            alt="Ramada Sulaymaniyah">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Sulaymaniyah</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Ramada by Wyndham Sulaymaniyah</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Sulaymaniyah, Sulaymaniyah</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$90</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('ramada-sulaymaniyah')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duhok Hotels -->
+                <div class="hotel-card" data-province="duhok" data-hotel="selahaddin-duhok">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&h=600&fit=crop"
+                            alt="Selahaddin Ayyubi Hotel">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Duhok</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Selahaddin Ayyubi Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Duhok, Duhok</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$80</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('selahaddin-duhok')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="duhok" data-hotel="jiyan-mall-hotel">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop"
+                            alt="Jiyan Mall Hotel">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Duhok</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Jiyan Mall Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Duhok, Duhok</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$70</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('jiyan-mall-hotel')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="duhok" data-hotel="duhok-palace">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop"
+                            alt="Duhok Palace Hotel">
+                        <span class="hotel-rating">5<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Duhok</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Duhok Palace Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Duhok, Duhok</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$120</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('duhok-palace')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="duhok" data-hotel="zakho-grand">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&h=600&fit=crop"
+                            alt="Zakho Grand Hotel">
+                        <span class="hotel-rating">3<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Duhok</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Zakho Grand Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Zakho, Duhok</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$55</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('zakho-grand')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="duhok" data-hotel="amedi-resort">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=600&fit=crop"
+                            alt="Amedi Resort Hotel">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Duhok</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Amedi Resort Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Amedi, Duhok</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$85</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('amedi-resort')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Halabja Hotels -->
+                <div class="hotel-card" data-province="halabja" data-hotel="halabja-palace">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1587213811864-46e59f6873b1?w=800&h=600&fit=crop"
+                            alt="Halabja Palace Hotel">
+                        <span class="hotel-rating">3<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Halabja</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Halabja Palace Hotel</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Halabja, Halabja</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$50</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('halabja-palace')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card" data-province="halabja" data-hotel="ahmed-awa-resort">
+                    <div class="hotel-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop"
+                            alt="Ahmed Awa Resort">
+                        <span class="hotel-rating">4<i class="fas fa-star"></i></span>
+                        <span class="hotel-province-tag">Halabja</span>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <h3 class="hotel-name">Ahmed Awa Resort</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Ahmed Awa, Halabja</p>
+                        <div class="hotel-price-row">
+                            <div class="hotel-price">
+                                <span class="price-label" data-translate="from">from</span>
+                                <span class="price-value">$75</span>
+                                <span class="price-night" data-translate="per-night">/night</span>
+                            </div>
+                            <button class="view-details-btn" onclick="openHotelDetails('ahmed-awa-resort')"
+                                data-translate="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Details Modal -->
+    <div class="modal-overlay" id="hotelDetailsModal">
+        <div class="modal hotel-details-modal">
+            <div class="modal-header">
+                <h2 data-translate="hotel-details">Hotel Details</h2>
+                <button class="modal-close" onclick="closeHotelDetails()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="hotel-details-content">
+                    <div class="hotel-gallery">
+                        <img id="hotelMainImage" src="" alt="Hotel Image">
+                        <div class="hotel-thumbnails" id="hotelThumbnails"></div>
+                    </div>
+                    <div class="hotel-info-details">
+                        <div class="hotel-stars-detail" id="hotelStarsDetail"></div>
+                        <h3 id="hotelNameDetail"></h3>
+                        <p class="hotel-location-detail"><i class="fas fa-map-marker-alt"></i> <span
+                                id="hotelLocationDetail"></span></p>
+                        <p class="hotel-description" id="hotelDescription"></p>
+                        <div class="hotel-amenities" id="hotelAmenities"></div>
+                    </div>
+                </div>
+                <div class="available-rooms">
+                    <h4 data-translate="available-rooms">Available Rooms</h4>
+                    <div class="rooms-grid" id="roomsGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal booking-modal">
+            <div class="modal-header booking-header">
+                <h2 id="roomTypeName">Classic Room</h2>
+                <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            </div>
+            <div class="modal-body booking-body">
+                <div class="booking-price-header">
+                    <span class="booking-price" id="bookingPrice">$180</span><span
+                        data-translate="per-night">/night</span>
+                    <p class="booking-hotel-name" id="bookingHotelName">Divan Erbil Hotel</p>
+                </div>
+
+                <div class="room-specs">
+                    <div class="spec-item">
+                        <span class="spec-label" data-translate="floor">FLOOR</span>
+                        <span class="spec-value" id="roomFloor">1-8</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label" data-translate="capacity">CAPACITY</span>
+                        <span class="spec-value" id="roomCapacity">2 persons</span>
+                    </div>
+                </div>
+
+                <div class="duration-section">
+                    <h4 data-translate="select-duration">Select Duration</h4>
+                    <div class="duration-options">
+                        <button class="duration-btn" data-days="1" data-translate="1-day">1 Day</button>
+                        <button class="duration-btn" data-days="2" data-translate="2-days">2 Days</button>
+                        <button class="duration-btn active" data-nights="1" data-translate="1-night">1 Night</button>
+                        <button class="duration-btn" data-days="7" data-translate="1-week">1 Week</button>
+                        <button class="duration-btn" data-days="14" data-translate="2-weeks">2 Weeks</button>
+                        <button class="duration-btn" data-days="30" data-translate="1-month">1 Month</button>
+                    </div>
+                </div>
+
+                <div class="price-summary">
+                    <div class="price-row">
+                        <span data-translate="price-per-night">Price per night:</span>
+                        <span id="pricePerNight">$180</span>
+                    </div>
+                    <div class="price-row">
+                        <span data-translate="duration">Duration:</span>
+                        <span id="durationText">1 night</span>
+                    </div>
+                    <div class="price-row total">
+                        <span data-translate="total-price">Total Price:</span>
+                        <span id="totalPrice">$180</span>
+                    </div>
+                </div>
+
+                <button class="confirm-booking-btn" onclick="confirmBooking()" data-translate="confirm-booking">
+                    Confirm Booking <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer-title">Kurdistan Travel</h3>
+                    <p data-translate="footer-desc">
+                        Discover the hidden gem of the Middle East. Experience breathtaking natural beauty, rich
+                        culture, and warm hospitality in Kurdistan.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-facebook" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-instagram" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link social-x"
+                            aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick">Quick Links</h3>
+                    <a href="index.html" data-translate="footer-home">Home</a>
+                    <a href="destinations.html" data-translate="footer-destinations">Destinations</a>
+                    <a href="about.html" data-translate="footer-about">About Kurdistan</a>
+                    <a href="gallery.html" data-translate="footer-gallery">Photo Gallery</a>
+                    <a href="contact.html" data-translate="footer-contact">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-top">Top Destinations</h3>
+                    <a href="destinations.html#gali-ali-beg" data-translate="card-gali-title">Gali Ali Beg</a>
+                    <a href="destinations.html#korek" data-translate="card-korek-title">Korek Mountain</a>
+                    <a href="destinations.html#rawanduz" data-translate="card-rawanduz-title">Rawanduz Canyon</a>
+                    <a href="destinations.html#dukan" data-translate="card-dukan-title">Dukan Lake</a>
+                    <a href="destinations.html#halgurd" data-translate="card-halgurd-title">Halgurd Mountain</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-info">Contact Info</h3>
+                    <p>📍 <span data-translate="footer-erbil">Erbil, Kurdistan Region</span></p>
+                    <p>📧 ISE@kurdistantravel.com</p>
+                    <p>📞 +964 750 123 4567</p>
+                    <p>🕒 <span data-translate="footer-hours">Mon - Fri: 9:00 AM - 6:00 PM</span></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/hotels.js"></script>
+</body>
+
+</html>

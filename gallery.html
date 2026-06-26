@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse stunning photos of Kurdistan's natural beauty, waterfalls, mountains, and tourist destinations.">
+    <meta name="keywords" content="Kurdistan photos, gallery, waterfalls, mountains, landscape photography">
+    <title>Photo Gallery - Beautiful Kurdistan in Pictures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <span>Visit</span> <span>Kurdistan</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                <li><a href="destinations.html" class="nav-link" data-translate="nav-destinations">Destinations</a></li>
+                <li><a href="hotels.html" class="nav-link" data-translate="nav-hotels">Hotels</a></li>
+                <li><a href="about.html" class="nav-link" data-translate="nav-about">About</a></li>
+                <li><a href="gallery.html" class="nav-link active" data-translate="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="toggleLangDropdown()">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <button class="lang-option" onclick="setLanguage('en')"> English</button>
+                    <button class="lang-option" onclick="setLanguage('ku')"> کوردی</button>
+                    <button class="lang-option" onclick="setLanguage('ar')"> العربية</button>
+                </div>
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="height: 50vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="gallery-hero-title">Photo Gallery</h1>
+            <p class="hero-subtitle" data-translate="gallery-hero-sub">Explore the stunning beauty of Kurdistan through
+                captivating images</p>
+        </div>
+    </section>
+
+    <!-- Waterfalls Gallery -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-waterfalls">Waterfalls & Water Features</h2>
+            <p class="section-subtitle" data-translate="gallery-waterfalls-sub">Cascading beauty and refreshing natural
+                pools</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/Gali Ali Beg Waterfall.jpg" alt="Waterfall">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Gali Ali Beg Waterfall</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Bekhal Waterfall.jpg" alt="Mountain Waterfall">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Bekhal Waterfall</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Ahmed Awa Waterfall.jpg" alt="Forest Waterfall">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Ahmed Awa Waterfall</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/AvaShen.jpeg" alt="Canyon Water">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">AvaShen</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Kanimaran.jpg" alt="Natural Pool">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Khalifan-KaniMaran</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Berma Sard.jpg" alt="Mountain Stream">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Berma Sard</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mountains Gallery -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-mountains">Mountains & Peaks</h2>
+            <p class="section-subtitle" data-translate="gallery-mountains-sub">Majestic heights and breathtaking alpine
+                scenery</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/Hallgurd.jpeg" alt="Snow Mountain">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Halgurd Peak - 3,607m</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/korek.jpeg" alt="Mountain Peak">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Korek - 2,127m</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Cheekha Dar.jpeg" alt="Cheekha Dar">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Cheekha Dar - 3611m</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/qendil.jpeg" alt="Qandi">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Qandi - 3587m</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Ararat.jpg" alt="Ararat">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Ararat - 5137m</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Safin.jpg" alt="Safin">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Safin - 1,475m</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lakes & Rivers -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-lakes">Lakes & Rivers</h2>
+            <p class="section-subtitle" data-translate="gallery-lakes-sub">Serene waters and stunning reflections</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/dukann.jpg" alt="Lake">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Dukan Lake</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Darbandikhan Lake.jpg" alt="Lake Sunset">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Darbandikhan Lake</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/ZeyGawra.jpg" alt="Lake Boat">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">The Great River (Zêy Gawra)</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Zey bchuk.jpg" alt="River">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">The Small River (Zêy Bachûk)</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Sirwan.jpeg" alt="Reflection">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Sirwan River</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/khapur.jpg" alt="Stream">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Khabur River (Duhok/Zakho)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historic Sites -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-historic">Historic & Cultural Sites</h2>
+            <p class="section-subtitle" data-translate="gallery-historic-sub">Ancient heritage and architectural wonders
+            </p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/Shanidar Cave.jpeg" alt="Cave">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Shanidar Cave</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Amedi .jpeg" alt="Ancient City">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Amedi Ancient City</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/The Grand Mosque of Akre.jpeg" alt="Temple">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Mizgewti Gewre - Akre</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/akre.jpg" alt="Town">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Akre Mountain Town</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Erbil Citadel.jpg" alt="Citadel">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Erbil Citadel</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/hazar merd.jpeg" alt="Ruins">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">HazarMerd Mountain</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Towns & Resorts -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-towns">Towns & Resorts</h2>
+            <p class="section-subtitle" data-translate="gallery-towns-sub">Charming destinations and modern amenities
+            </p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/Shaqlawa.jpeg" alt="Town">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">The District of Shaqlawa</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Zaxo.jpg" alt="Resort">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Zaxo</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/choman.jpg" alt="Town View">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Choman</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Korek Mountain.jpeg" alt="Resort">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Korek Mountain Resort</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Przhe.jpeg" alt="Village">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Przhe</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Chavi Land.jpeg" alt="Chavi Land">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Chavi Land</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature & Wildlife -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-nature">Nature & Landscapes</h2>
+            <p class="section-subtitle" data-translate="gallery-nature-sub">The diverse beauty of Kurdistan's natural
+                environment</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/Spring Wildflowers.jpeg" alt="Flowers">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Spring Wildflowers</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Mountain Forest.jpeg" alt="Forest">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Mountain Forest</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Mountain Sunset.jpeg" alt="Sunset">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Mountain Sunset</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Alpine Meadow.jpg" alt="Meadow">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">The Nature of Flowers and Mountains</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Goska.jpeg" alt="Doly Khre">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Doly Khre</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gali-sherana.jpeg" alt="Gali Sherana">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Gali Sherana</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section section-light">
+        <div class="container text-center">
+            <h2 class="section-title" data-translate="gallery-experience">Experience It Yourself</h2>
+            <p class="section-subtitle" data-translate="gallery-experience-sub">Pictures can only capture so much - come
+                and see the real beauty of Kurdistan
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="destinations.html" class="btn btn-primary" data-translate="btn-plan-visit">Plan Your Visit</a>
+                <a href="contact.html" class="btn btn-outline" data-translate="btn-travel-info">Get Travel
+                    Information</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer-title">Kurdistan Travel</h3>
+                    <p data-translate="footer-desc">
+                        Discover the hidden gem of the Middle East. Experience breathtaking natural beauty, rich
+                        culture, and warm hospitality in Kurdistan.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-facebook" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-instagram" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link social-x"
+                            aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                            class="social-link social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick">Quick Links</h3>
+                    <a href="index.html" data-translate="footer-home">Home</a>
+                    <a href="destinations.html" data-translate="footer-destinations">Destinations</a>
+                    <a href="about.html" data-translate="footer-about">About Kurdistan</a>
+                    <a href="gallery.html" data-translate="footer-gallery">Photo Gallery</a>
+                    <a href="contact.html" data-translate="footer-contact">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-top">Top Destinations</h3>
+                    <a href="destinations.html#gali-ali-beg" data-translate="card-gali-title">Gali Ali Beg</a>
+                    <a href="destinations.html#korek" data-translate="card-korek-title">Korek Mountain</a>
+                    <a href="destinations.html#rawanduz" data-translate="card-rawanduz-title">Rawanduz Canyon</a>
+                    <a href="destinations.html#dukan" data-translate="card-dukan-title">Dukan Lake</a>
+                    <a href="destinations.html#halgurd" data-translate="card-halgurd-title">Halgurd Mountain</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="footer-info">Contact Info</h3>
+                    <p>📍 <span data-translate="footer-erbil">Erbil, Kurdistan Region</span></p>
+                    <p>📧 info@kurdistantravel.com</p>
+                    <p>📞 +964 750 123 4567</p>
+                    <p>🕒 <span data-translate="footer-hours">Mon - Fri: 9:00 AM - 6:00 PM</span></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/language.js"></script>
+</body>
+
+</html>
