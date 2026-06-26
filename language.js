@@ -1,4 +1,5 @@
 // Language Translations - Kurdistan Travel Website
+// Muhamad Mawlud
 const translations = {
     // Navigation
     "nav-home": { en: "Home", ku: "سەرەتا", ar: "الرئيسية" },
